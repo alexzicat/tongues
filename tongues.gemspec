@@ -6,10 +6,10 @@ require 'tongues/version'
 Gem::Specification.new do |spec|
   spec.name          = "tongues"
   spec.version       = Tongues::VERSION
-  spec.authors       = ["alexzicat"]
+  spec.authors       = ["Alexandre Zicat"]
   spec.email         = ["dev.alexzicat@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Small language detection gem using detectlanguage.com api. Heavily inspired by the wtf_lang gem}
+  spec.summary       = %q{Small language detection gem using detectlanguage.com api. Heavily inspired by the wtf_lang gem}
   spec.homepage      = ""
   spec.license       = "MIT"
 
