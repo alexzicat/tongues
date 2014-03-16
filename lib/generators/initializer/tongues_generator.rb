@@ -1,7 +1,7 @@
 require 'rails/generators'
 
 module Tongues
-  class InitializerGenerator < Rails::Generators::Base
+  class TonguesGenerator < Rails::Generators::Base
     source_root File.expand_path('../templates', __FILE__)
 
     desc 'This generator creates an initializer for the api key.'
