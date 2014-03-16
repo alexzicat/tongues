@@ -19,16 +19,6 @@ module Tongues
           Tongue.new(lang_symbol, language, confidence)
         end
       end
-
-      ## Returns the api key
-      def key
-        @key
-      end
-
-      ## Modifies the api key
-      def key=(key)
-        @key = key
-      end
     end
 
     private
