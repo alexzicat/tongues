@@ -1,3 +1,4 @@
+require 'rails'
 require 'net/http'
 require 'cgi'
 require 'json'
