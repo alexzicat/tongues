@@ -31,6 +31,7 @@ Add your detectlanguage.com api key inside config/initializers/tongues.rb:
     end
 
 You are now ready to use the gem
+
     "how you get a String language".tongue # => "ENGLISH"
     "how you get a String language code".tongue_code # => "en"
     "how you get the confidence in a language detection".tongue_confidence # => 15.09
