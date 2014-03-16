@@ -1,0 +1,178 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ws.detectlanguage.com/0.2/detect?key=demo&q=this%20is%20an%20english%20text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - ws.detectlanguage.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/0.7.65
+      Date:
+      - Sun, 16 Mar 2014 04:14:11 GMT
+      Content-Type:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '80'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"detections":[{"language":"en","isReliable":true,"confidence":21.33}]}}'
+    http_version: 
+  recorded_at: Sun, 16 Mar 2014 04:14:10 GMT
+- request:
+    method: get
+    uri: http://ws.detectlanguage.com/0.2/detect?key=demo&q=ceci%20est%20un%20texte%20en%20fran%C3%A7ais
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - ws.detectlanguage.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/0.7.65
+      Date:
+      - Sun, 16 Mar 2014 04:18:35 GMT
+      Content-Type:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '79'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"detections":[{"language":"fr","isReliable":true,"confidence":9.24}]}}'
+    http_version: 
+  recorded_at: Sun, 16 Mar 2014 04:18:35 GMT
+- request:
+    method: get
+    uri: http://ws.detectlanguage.com/0.2/detect?key=demo&q=este%20es%20un%20texto%20espa%C3%B1ol
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - ws.detectlanguage.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/0.7.65
+      Date:
+      - Sun, 16 Mar 2014 04:24:45 GMT
+      Content-Type:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '80'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"detections":[{"language":"es","isReliable":true,"confidence":19.29}]}}'
+    http_version: 
+  recorded_at: Sun, 16 Mar 2014 04:24:45 GMT
+- request:
+    method: get
+    uri: http://ws.detectlanguage.com/0.2/detect?key=demo&q=%D1%8D%D1%82%D0%BE%20%D1%8F%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BA%D1%81%D1%82
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - ws.detectlanguage.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/0.7.65
+      Date:
+      - Sun, 16 Mar 2014 04:26:58 GMT
+      Content-Type:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '80'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"detections":[{"language":"ru","isReliable":true,"confidence":12.69}]}}'
+    http_version: 
+  recorded_at: Sun, 16 Mar 2014 04:26:58 GMT
+- request:
+    method: get
+    uri: http://ws.detectlanguage.com/0.2/detect?key=demo&q=1234
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - ws.detectlanguage.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/0.7.65
+      Date:
+      - Sun, 16 Mar 2014 04:33:09 GMT
+      Content-Type:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '26'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"detections":[]}}'
+    http_version: 
+  recorded_at: Sun, 16 Mar 2014 04:33:09 GMT
+recorded_with: VCR 2.8.0
