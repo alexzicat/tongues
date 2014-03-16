@@ -10,6 +10,8 @@ module Tongues
 
       ## Detects the language for the text in params
       def detect(text)
+        raise NoApiKeyError, 'Invalid api key. Check config/initializers/tongues.rb' if Tongues::Configuration.api_key.blank?
+
         response = call_api(text)
 
         if detection = parse_response(response)
@@ -42,5 +44,8 @@ module Tongues
     def self.parse_response(response)
       JSON.parse(response)['data']['detections'].first
     end
+  end
+
+  class NoApiKeyError < StandardError
   end
 end

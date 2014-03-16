@@ -22,7 +22,7 @@ module Tongues
 
     ## Returns the api key
     def api_key
-      @@api_key
+      @@api_key ||= ''
     end
 
     ## Modifies the api_key
@@ -32,7 +32,7 @@ module Tongues
 
     ## Returns the api key
     def self.api_key
-      @@api_key
+      @@api_key ||= ''
     end
 
     ## Modifies the api_key
