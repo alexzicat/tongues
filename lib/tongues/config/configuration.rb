@@ -32,7 +32,7 @@ module Tongues
 
     ## Returns a hash of supported languages
     def self.languages
-      YAML::load(File.open('lib/tongues/config/config.yml'))['correspondences']
+      YAML::load(File.open('tongues/config/config.yml'))['correspondences']
     end
   end
 end
