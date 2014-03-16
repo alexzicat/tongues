@@ -4,20 +4,23 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'tongues/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "tongues"
+  spec.name          = 'tongues'
   spec.version       = Tongues::VERSION
-  spec.authors       = ["Alexandre Zicat"]
-  spec.email         = ["dev.alexzicat@gmail.com"]
+  spec.authors       = ['Alexandre Zicat']
+  spec.email         = ['dev.alexzicat@gmail.com']
   spec.description   = %q{Small language detection gem using detectlanguage.com api. Heavily inspired by the wtf_lang gem}
-  spec.summary       = %q{Small language detection gem using detectlanguage.com api. Heavily inspired by the wtf_lang gem}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.summary       = %q{Small language detection gem}
+  spec.homepage      = 'https://github.com/alexzicat'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency 'bundler', '~> 1.3'
+  spec.add_development_dependency 'rake', '~> 0'
+
+  spec.add_dependency 'rails', '>= 3.2.3'
+  spec.add_dependency 'json'
 end
