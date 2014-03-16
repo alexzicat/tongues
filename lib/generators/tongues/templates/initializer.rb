@@ -1,4 +1,4 @@
-#Tongues.configure do |config|
-#  require 'tongues'
-#  config.api_key = ''
-#end
+Tongues.configure do |config|
+  require 'tongues'
+  config.api_key = ''
+end
