@@ -1,7 +1,5 @@
-require 'rails'
 require 'net/http'
 require 'cgi'
-require 'json'
 require 'tongues/tongue'
 
 module Tongues
@@ -11,7 +9,9 @@ module Tongues
 
       ## Detects the language for the text in params
       def detect(text)
-        raise NoApiKeyError, 'Invalid api key. Check config/initializers/tongues.rb' if Tongues::Configuration.api_key.blank?
+        if Tongues::Configuration.api_key.nil? or Tongues::Configuration.api_key.empty?
+          raise NoApiKeyError, 'Invalid api key. Check config/initializers/tongues.rb'
+        end
 
         response = call_api(text)
 

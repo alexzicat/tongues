@@ -23,7 +23,12 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'webmock'
+  # ruby 1.8
+  #spec.add_development_dependency 'ruby-debug'
+  # ruby 1.9/2.0
+  spec.add_development_dependency 'debugger'
+  # ruby 2.0/2.1
+  #spec.add_development_dependency 'byebug'
 
-  spec.add_runtime_dependency 'rails', '>= 3.2.3'
   spec.add_runtime_dependency 'json', '>= 0'
 end
