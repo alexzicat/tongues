@@ -10,7 +10,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
       Host:
@@ -45,7 +45,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
       Host:
@@ -80,7 +80,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
       Host:
@@ -115,7 +115,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
       Host:
@@ -150,7 +150,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
       Host:
@@ -175,4 +175,39 @@ http_interactions:
       string: '{"data":{"detections":[]}}'
     http_version: 
   recorded_at: Sun, 16 Mar 2014 04:33:09 GMT
-recorded_with: VCR 2.8.0
+- request:
+    method: get
+    uri: http://ws.detectlanguage.com/0.2/detect?key=demo&q=1234
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - ws.detectlanguage.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Thu, 02 Oct 2014 17:27:12 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '26'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"detections":[]}}'
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 17:27:12 GMT
+recorded_with: VCR 2.9.3
