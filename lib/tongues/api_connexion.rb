@@ -1,5 +1,6 @@
 require 'net/http'
 require 'cgi'
+require 'json'
 require 'tongues/tongue'
 
 module Tongues
