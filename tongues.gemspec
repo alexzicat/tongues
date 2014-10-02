@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   # ruby 1.8
   #spec.add_development_dependency 'ruby-debug'
   # ruby 1.9/2.0
-  spec.add_development_dependency 'debugger'
+  #spec.add_development_dependency 'debugger'
   # ruby 2.0/2.1
   #spec.add_development_dependency 'byebug'
 
